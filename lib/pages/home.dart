@@ -68,12 +68,23 @@ class UserHome extends StatelessWidget {
                                     color: Colors.grey,
                                     border: Border.all(
                                         color: Colors.black38, width: 3)),
-                                child: const Padding(
-                                  padding: EdgeInsets.fromLTRB(38, 30, 0, 0),
-                                  child: Text(
-                                    '+',
-                                    style: TextStyle(
-                                        fontSize: 30, color: Colors.black87),
+                                child: Align(
+                                  alignment: Alignment.bottomRight,
+                                  child: Container(
+                                    height: 25,
+                                    width: 25,
+                                    decoration: BoxDecoration(
+                                        border: Border.all(
+                                            color: Colors.black38, width: 2),
+                                        shape: BoxShape.circle,
+                                        color: Colors.blue),
+                                    child: const Center(
+                                      child: Text(
+                                        '+',
+                                        style: TextStyle(
+                                            fontSize: 17, color: Colors.white),
+                                      ),
+                                    ),
                                   ),
                                 ),
                               ),
